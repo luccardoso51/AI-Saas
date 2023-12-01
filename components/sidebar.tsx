@@ -27,13 +27,13 @@ const routes = [
     {
         label:"Image Generation",
         icon: ImageIcon,
-        href: "/conversation",
+        href: "/image",
         color:"text-pink-700"
     },
     {
         label:"Video Generation",
         icon: VideoIcon,
-        href: "/image",
+        href: "/video",
         color:"text-orange-700"
     },
     {
