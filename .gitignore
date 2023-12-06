@@ -398,5 +398,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 #local env files
-.env*. local
+*.env local
 .env
