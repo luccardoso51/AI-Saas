@@ -42,6 +42,7 @@ function ImagePage() {
 
             console.log(values)
             const response = await axios.post("/api/image", values);
+            console.log(response)
 
             const urls = response.data.map((image: {url: string}) => image.url);
 
@@ -176,7 +177,7 @@ function ImagePage() {
                         key={src}
                         className="rounded-lg overflow-hidden"
                     >
-                        <div className="realtive aspect-square">
+                        <div className="relative aspect-square">
                             <Image 
                             alt="Image"
                             fill
