@@ -12,15 +12,10 @@
       "static/css/app/(dashboard)/layout.css",
       "static/chunks/app/(dashboard)/layout.js"
     ],
-    "/(dashboard)/(routes)/conversation/page": [
+    "/(dashboard)/(routes)/image/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/(routes)/conversation/page.js"
-    ],
-    "/(dashboard)/(routes)/code/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/(routes)/code/page.js"
+      "static/chunks/app/(dashboard)/(routes)/image/page.js"
     ]
   }
 }
