@@ -1,5 +1,5 @@
 {
-  "/api/image/route": "app/api/image/route.js",
+  "/api/music/route": "app/api/music/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(dashboard)/(routes)/image/page": "app/(dashboard)/(routes)/image/page.js"
+  "/(dashboard)/(routes)/music/page": "app/(dashboard)/(routes)/music/page.js"
 }

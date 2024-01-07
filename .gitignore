@@ -400,3 +400,4 @@ FodyWeavers.xsd
 #local env files
 *.env local
 .env
+*.env
