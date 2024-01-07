@@ -1,5 +1,4 @@
 {
-  "/api/music/route": "app/api/music/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(dashboard)/(routes)/music/page": "app/(dashboard)/(routes)/music/page.js"
+  "/not-found": "app/not-found.js",
+  "/(dashboard)/(routes)/video/page": "app/(dashboard)/(routes)/video/page.js"
 }
