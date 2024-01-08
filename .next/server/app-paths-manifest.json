@@ -1,5 +1,5 @@
 {
-  "/api/conversation/route": "app/api/conversation/route.js",
-  "/(landing)/page": "app/(landing)/page.js",
+  "/api/image/route": "app/api/image/route.js",
+  "/(dashboard)/(routes)/image/page": "app/(dashboard)/(routes)/image/page.js",
   "/(dashboard)/(routes)/conversation/page": "app/(dashboard)/(routes)/conversation/page.js"
 }
