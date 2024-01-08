@@ -18,11 +18,13 @@ import Loader from "@/components/loader";
 import { cn } from "@/lib/utils";
 import UserAvatar from "@/components/user-avatar";
 import BotAvatar from "@/components/bot-avatar";
+import { useProModal } from "@/app/hooks/use-pro-modal";
 
 
 
 
 function ConversationPage() {
+    const proModal = useProModal();
     const router = useRouter();
     const [messages, setMessages] = useState<ChatCompletionMessageParam[]>([])
     const form = useForm<z.infer<typeof formSchema>>({
@@ -52,7 +54,9 @@ function ConversationPage() {
             form.reset();
 
         } catch (error: any) {
-            //TODO: OPEN PRO MODAL
+            if(error?.response?.status === 403 ){
+                proModal.onOpen();
+            }
             console.log(error);
         } finally {
             router.refresh();
