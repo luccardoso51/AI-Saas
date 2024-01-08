@@ -1,5 +1,3 @@
 {
-  "/api/image/route": "app/api/image/route.js",
-  "/(dashboard)/(routes)/image/page": "app/(dashboard)/(routes)/image/page.js",
-  "/(dashboard)/(routes)/conversation/page": "app/(dashboard)/(routes)/conversation/page.js"
+  "/(dashboard)/(routes)/video/page": "app/(dashboard)/(routes)/video/page.js"
 }
