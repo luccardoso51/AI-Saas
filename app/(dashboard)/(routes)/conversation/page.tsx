@@ -19,6 +19,7 @@ import { cn } from "@/lib/utils";
 import UserAvatar from "@/components/user-avatar";
 import BotAvatar from "@/components/bot-avatar";
 import { useProModal } from "@/app/hooks/use-pro-modal";
+import { checkSubscription } from "@/lib/subscription";
 
 
 

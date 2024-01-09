@@ -1,9 +1,6 @@
 {
-  "/not-found": "app/not-found.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/api/stripe/route": "app/api/stripe/route.js",
+  "/(dashboard)/(routes)/settings/page": "app/(dashboard)/(routes)/settings/page.js",
   "/(dashboard)/(routes)/conversation/page": "app/(dashboard)/(routes)/conversation/page.js",
-  "/(dashboard)/(routes)/image/page": "app/(dashboard)/(routes)/image/page.js",
-  "/(dashboard)/(routes)/video/page": "app/(dashboard)/(routes)/video/page.js",
-  "/(dashboard)/(routes)/music/page": "app/(dashboard)/(routes)/music/page.js",
-  "/(dashboard)/(routes)/code/page": "app/(dashboard)/(routes)/code/page.js"
+  "/(dashboard)/(routes)/dashboard/page": "app/(dashboard)/(routes)/dashboard/page.js"
 }

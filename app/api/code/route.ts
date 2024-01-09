@@ -4,6 +4,7 @@ import { NextResponse } from "next/server";
 import OpenAI from "openai";
 import { ChatCompletionMessageParam } from "openai/resources/index.mjs";
 import { checkApiLimit, increaseApiLimit } from "@/lib/api-limit";
+import { checkSubscription } from "@/lib/subscription";
 
 
 // const configuration = new OpenAI({
@@ -42,6 +43,7 @@ export async function POST(
         }
 
         const freeTrial = await checkApiLimit();
+        const isPro = await checkSubscription();
 
         if(!freeTrial){
             return new NextResponse("Free trial has expired", {status: 403})
@@ -53,8 +55,9 @@ export async function POST(
             
         })
 
-        await increaseApiLimit();
-
+        if(!isPro){
+            await increaseApiLimit();
+        }
         return NextResponse.json(response.choices[0].message)
     } catch(error){
         log("[CODE ERROR]", error);
