@@ -20,6 +20,7 @@ import UserAvatar from "@/components/user-avatar";
 import BotAvatar from "@/components/bot-avatar";
 import { useProModal } from "@/app/hooks/use-pro-modal";
 import { checkSubscription } from "@/lib/subscription";
+import toast from "react-hot-toast";
 
 
 
@@ -57,6 +58,8 @@ function ConversationPage() {
         } catch (error: any) {
             if(error?.response?.status === 403 ){
                 proModal.onOpen();
+            } else {
+                toast
             }
             console.log(error);
         } finally {

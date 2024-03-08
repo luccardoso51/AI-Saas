@@ -1,6 +1,9 @@
 {
   "/api/stripe/route": "app/api/stripe/route.js",
-  "/(dashboard)/(routes)/settings/page": "app/(dashboard)/(routes)/settings/page.js",
+  "/(landing)/page": "app/(landing)/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(auth)/(routes)/sign-in/[[...sign-in]]/page": "app/(auth)/(routes)/sign-in/[[...sign-in]]/page.js",
+  "/(dashboard)/(routes)/dashboard/page": "app/(dashboard)/(routes)/dashboard/page.js",
   "/(dashboard)/(routes)/conversation/page": "app/(dashboard)/(routes)/conversation/page.js",
-  "/(dashboard)/(routes)/dashboard/page": "app/(dashboard)/(routes)/dashboard/page.js"
+  "/(dashboard)/(routes)/video/page": "app/(dashboard)/(routes)/video/page.js"
 }
